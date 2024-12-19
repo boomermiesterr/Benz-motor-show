@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="Mercedes Logo" class="logo-img">
+                <span class="logo-text">Mercedes-Benz By Piyawat</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience <span class="highlight">Excellence</span></h1>
+            <p>Discover the future of luxury automotive engineering in our exclusive showroom</p>
+            <a href="#models" class="cta-button">Explore Models</a>
+        </div>
+    </section>
+
+    <section id="models" class="car-models">
+        <h2>Our Exclusive Collection</h2>
+        <div class="car-grid">
+            <!-- Previous car cards remain the same -->
+            <div class="car-card" data-car="amg-gt">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80" alt="Mercedes-AMG GT">
+                </div>
+                <div class="car-details">
+                    <h3>Mercedes-AMG GT</h3>
+                    <p>Experience raw power and luxury combined in this masterpiece of engineering.</p>
+                    <div class="car-footer">
+                        <span class="price">$165,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card" data-car="s-class">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&q=80" alt="S-Class Sedan">
+                </div>
+                <div class="car-details">
+                    <h3>S-Class Sedan</h3>
+                    <p>The pinnacle of luxury and comfort in the automotive world.</p>
+                    <div class="car-footer">
+                        <span class="price">$110,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card" data-car="g-class">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80" alt="G-Class SUV">
+                </div>
+                <div class="car-details">
+                    <h3>G-Class SUV</h3>
+                    <p>Legendary capability meets modern luxury in this iconic SUV.</p>
+                    <div class="car-footer">
+                        <span class="price">$140,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New car cards -->
+            <div class="car-card" data-car="e-class">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&q=80" alt="E-Class Sedan">
+                </div>
+                <div class="car-details">
+                    <h3>E-Class Sedan</h3>
+                    <p>Intelligence meets sophistication in this executive masterpiece.</p>
+                    <div class="car-footer">
+                        <span class="price">$95,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card" data-car="gle-coupe">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1605515298946-d062f2e9da53?auto=format&fit=crop&q=80" alt="GLE Coupe">
+                </div>
+                <div class="car-details">
+                    <h3>GLE Coupe</h3>
+                    <p>Athletic performance meets SUV versatility in stunning form.</p>
+                    <div class="car-footer">
+                        <span class="price">$120,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card" data-car="cls">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?auto=format&fit=crop&q=80" alt="CLS Coupe">
+                </div>
+                <div class="car-details">
+                    <h3>CLS Coupe</h3>
+                    <p>Where innovative design meets cutting-edge technology.</p>
+                    <div class="car-footer">
+                        <span class="price">$105,000</span>
+                        <button class="details-button">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous modals remain the same -->
+    <!-- New car modals -->
+    <div id="modal-e-class" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-images">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&q=80" alt="E-Class Sedan">
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&q=80" alt="Front">
+                        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&q=80" alt="Interior">
+                        <img src="https://images.unsplash.com/photo-1607853202173-36b6ec0606a7?auto=format&fit=crop&q=80" alt="Back">
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2>E-Class Sedan</h2>
+                    <p class="price">Starting at $95,000</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Engine</span>
+                            <span class="spec-value">3.0L Inline-6 Turbo</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">362 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">0-60 mph</span>
+                            <span class="spec-value">4.9 seconds</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Transmission</span>
+                            <span class="spec-value">9G-TRONIC</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>MBUX with AI-powered voice assistant</li>
+                            <li>Intelligent Drive Package</li>
+                            <li>Burmester® 3D surround sound</li>
+                            <li>64-color ambient lighting</li>
+                            <li>Wireless charging</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Schedule Test Drive</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-gle-coupe" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-images">
+                    <img src="https://images.unsplash.com/photo-1605515298946-d062f2e9da53?auto=format&fit=crop&q=80" alt="GLE Coupe">
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1605515298946-d062f2e9da53?auto=format&fit=crop&q=80" alt="Front">
+                        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&q=80" alt="Interior">
+                        <img src="https://images.unsplash.com/photo-1607853202173-36b6ec0606a7?auto=format&fit=crop&q=80" alt="Back">
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2>GLE Coupe</h2>
+                    <p class="price">Starting at $120,000</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Engine</span>
+                            <span class="spec-value">3.0L Inline-6 Turbo</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">429 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">0-60 mph</span>
+                            <span class="spec-value">5.2 seconds</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ground Clearance</span>
+                            <span class="spec-value">7.5 inches</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>AMG Line Exterior</li>
+                            <li>AIRMATIC® Suspension</li>
+                            <li>Active Curve System</li>
+                            <li>Panorama roof</li>
+                            <li>Head-Up Display</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Schedule Test Drive</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cls" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-images">
+                    <img src="https://vehicle-images.dealerinspire.com/970b-11001061/thumbnails/large/4JGFD8KB9RB166705/28a24d3d72b5df66cef40626a9cc300c.png" alt="CLS Coupe">
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?auto=format&fit=crop&q=80" alt="Front">
+                        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&q=80" alt="Interior">
+                        <img src="https://images.unsplash.com/photo-1607853202173-36b6ec0606a7?auto=format&fit=crop&q=80" alt="Back">
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2>CLS Coupe</h2>
+                    <p class="price">Starting at $105,000</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Engine</span>
+                            <span class="spec-value">3.0L Inline-6 Turbo</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">362 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">0-60 mph</span>
+                            <span class="spec-value">4.8 seconds</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Transmission</span>
+                            <span class="spec-value">9G-TRONIC</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>AMG Line styling</li>
+                            <li>MULTIBEAM LED headlamps</li>
+                            <li>12.3-inch digital instrument cluster</li>
+                            <li>Active Parking Assist</li>
+                            <li>Driver Assistance Package</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">Schedule Test Drive</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mercedes-Benz. All rights reserved.</p>
+    </footer>
+
+    <script src="modal.js"></script>
+</body>
+</html>
