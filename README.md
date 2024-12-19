@@ -16,5 +16,7 @@ prompt is:Create a modern, sleek website showcasing a showroom for Benz cars. Th
 --------------
 - 2. i want when click into  Details view see information about this car for every car
      ![image](https://github.com/user-attachments/assets/62442cd7-31aa-4762-bcd3-79d834013b44)
+     ### Result is
+     ![image](https://github.com/user-attachments/assets/2f245be0-4cb2-4650-bb47-13e589ddbc24)
 --------------
 - 3 . i want more model of cars
